@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Orbitron:wght@400;500;600;700;800;900&family=Qwitcher+Grypen:wght@700&display=swap');
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Orbitron', 'Jomhuria', 'Times New Roman', Times, serif, cursive;
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+}
