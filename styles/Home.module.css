@@ -20,8 +20,19 @@
   animation: image_animation 1s ease-in-out  forwards;
 }
 .hero_text{
-  grid-column: 15/20;
+  grid-column: 15/25;
   font-size: 1.3rem;
+}
+.hero_text ul{
+  list-style-type: none;
+}
+.hero_text section{
+  overflow-y: hidden;
+}
+.hero_text section p{
+  animation: herotextanimation 0.8s ease-in-out 0.7s forwards;
+  color: white;
+  margin: 0px;
 }
 .bottom_section{
   display: grid;
@@ -35,10 +46,14 @@
 .bottm_hero_text p{
   margin: 0px;
 }
-.bottm_hero_text p:nth-child(2){
+.text_wrapper{
+  overflow: hidden;
+}
+.text_wrapper p{
   font-size: 1.5rem;
   font-weight: 600;
   margin-top: 1rem;
+  animation: emailAnimation 0.7s ease-in-out 1.5s forwards;
 }
 .contact_email{
   grid-column: 3/8;
@@ -48,6 +63,13 @@
   font-size: 1.2rem;
   grid-column: 2/10;
 }
+.email{
+  animation: emailAnimation 1s ease-in-out 1.5s forwards;
+}
+.quotes_text ul{
+  list-style-type: none;
+  margin: 0px;
+}
 @keyframes image_animation {
   0%{
     transform : translateY(450px)
@@ -55,4 +77,78 @@
   100%{
     transform : translateY(0px)
   }
+}
+@keyframes herotextanimation {
+  0%{
+    transform : translateY(100px);
+    color: white;
+    scale: (1.1);
+  }
+  100%{
+    transform : translateY(0px);
+    color: black;
+    scale: (1);
+  }
+}
+@keyframes emailAnimation {
+  0%{
+    transform: translateY(-100px);
+    color: white;
+  }
+  100%{
+    transform: translateY(0px);
+    color: black;
+  }
+}
+
+
+/* images gallary */
+.images{
+  margin-top: 1.3in;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  justify-content: space-around;  
+}
+.images img{
+  width: 300px;
+  object-fit: contain;
+  margin: 0px 3rem;
+  cursor: pointer;
+}
+.images img:nth-child(1){
+  filter: grayscale(0%);
+  /* transition: filter 0.7s; */
+}
+.images img:nth-child(1):hover{
+  filter: grayscale(100%);
+  transition: filter 0.7s;
+}
+.images img:nth-child(2){
+  margin-bottom: 3in;
+}
+.images img:nth-child(2):hover{
+  filter: brightness(80%);
+  transition: filter 0.7s linear;
+}
+.images img:nth-child(3){
+  margin-top: 2.3in;
+  filter: grayscale(0%);
+}
+.images img:nth-child(3):hover{
+  filter: grayscale(100%);
+  transition: filter 0.7s;  
+}
+.images img:nth-child(5){
+  margin-bottom: 1.5in;
+  margin-top: 2.5in;
+}
+.images img:nth-child(6){
+  margin-top: 2.5in;
+}
+.images img:nth-child(4){
+  margin-top: 2.5in;
+}
+.images::-webkit-scrollbar {
+  display: none;
 }

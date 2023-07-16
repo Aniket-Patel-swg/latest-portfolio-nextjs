@@ -1,0 +1,25 @@
+.SpecificWork_main {
+  margin: 48px;
+}
+.SpecificWork_main h1 em {
+  color: #12991f;
+}
+.SpecificWork_main h1 b {
+  color: #98695b;
+}
+
+.projectContainer div {
+  border-top: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: -1.5vw;
+  background-color: white;
+}
+
+.projectContainer div p {
+  margin: 0px;
+  font-size: 4vw;
+  padding-left: 10px;
+  text-transform: uppercase;
+  pointer-events: none;
+}
