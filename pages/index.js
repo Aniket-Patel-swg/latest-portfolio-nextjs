@@ -6,6 +6,7 @@ import Images from '../Components/Images.js';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import SpecificWork from "../Components/SpecificWork";
+import Work from "../Components/Work";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
@@ -96,6 +97,7 @@ export default function Home() {
         </section> */}
         <Images data-scroll-section />
         <SpecificWork data-scroll-section />
+        <Work data-scroll-section />
         </main>
       </LocomotiveScrollProvider>
     </>

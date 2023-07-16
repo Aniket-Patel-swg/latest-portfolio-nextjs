@@ -1,0 +1,66 @@
+.work_section{
+    margin: 48px;
+    margin-top: 4rem;
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.upper_work_text{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2vw;
+}
+.middle_work_details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.middle_work_details h3{
+    font-size: 3vw;
+    font-style: italic;
+}
+.startup_section{
+    display: flex;
+    gap: 2vw;
+    font-weight: 700;
+}
+.bottom_work_images{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.startup_section p{
+    margin-top: 0px;
+}
+.startup_section img{
+    max-width: 13.5vw;
+    object-fit: contain;
+    cursor: pointer;
+}
+.redesign_section{
+    display: flex;
+    gap: 2vw;
+}
+.redesign_section img{
+    max-width: 20vw;
+    object-fit: contain;
+    cursor: pointer;
+}
+.redesign_section p{
+    margin-top: 0px;
+    font-weight: 700;
+}
+.real_estate_section{
+    display: flex;
+    gap: 2vw;
+}
+.real_estate_section img{
+    max-width: 13.5vw;
+    object-fit: contain;
+    cursor: pointer;
+}
+.real_estate_section p{
+    margin-top: 0px;
+    font-weight: 700;
+}
